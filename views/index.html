@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" media="screen">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style type="text/css">
+    body{
+    	text-align: center;
+    }
+    a{
+    	text-align: center;
+    	color: #000000;
+    	text-decoration: none;
+
+    }
+    a:hover{ text-decoration: underline;   	
+     }
+     .indexButton{
+/*     	display: inline-block;*/
+     	min-width: 100px;
+				
+
+     }
+    </style>
+  </head>
+  <body>
+    <h1 class="title"><%= title %></h1>
+    <p>SHOW ME THE CODE</p>
+    
+    <div class="">
+    <a href="/login"><button type="submit" class="btn btn-info indexButton" >登录</button></a>
+    <a href="/register"><button type="submit" class="btn btn-info indexButton"  >注册</button></a>
+
+    </div>
+  </body>
+</html>

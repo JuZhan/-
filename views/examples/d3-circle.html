@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style> /* CSS */ </style>
+</head>
+<body>
+     <svg width="960" height="500">
+        <circle cx="10" cy="10" r="5">
+    </svg>
+    <script src="https://d3js.org/d3.v4.min.js">
+    </script>
+    <script>
+        // select all SVG circles elements
+        var circles = d3.selectAll("circle");
+        // set attributes and styles
+        circles.attr("cx", 150);
+        circles.attr("cy", 150);
+        circles.attr("r", 50);
+        circles.style("fill", "red");
+    </script>
+</body>
+</html>

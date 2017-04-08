@@ -1,0 +1,99 @@
+use people
+db.dropDatabase()
+show dbs
+db.person
+use person
+show dbs
+db.perosn.insert({     title: 'PHP 教程',      description: 'PHP 是一种创建动态交互性站点的强有力的服务器端脚本语言。',     by: '菜鸟教程',     url: 'http://www.runoob.com',     tags: ['php'],     likes: 200 })
+db.person.insert({title: 'MongoDB 教程',     description: 'MongoDB 是一个 Nosql 数据库',     by: '菜鸟教程',     url: 'http://www.runoob.com',     tags: ['mongodb'],     likes: 100 })
+db.person.insert({title: 'Java 教程',     description: 'Java 是由Sun Microsystems公司于1995年5月推出的高级程序设计语言。',     by: '菜鸟教程',     url: 'http://www.runoob.com',     tags: ['java'],     likes: 150 })
+db.person.find()
+db.person.remove({})
+db.people.remove({})
+db.dropDatabase()
+use people
+db.dropDatabase()
+show dbs
+use people
+db.people.insert({ "_id" : ObjectId("56066542ade2f21f36b0313a"), "title" : "PHP 教程", "description" : "PHP 是一种创建动态交互性站点的强有力的服务器端脚本语言。", "by" : "菜鸟教程", "url" : "http://www.runoob.com", "tags" : [ "php" ], "likes" : 200 })
+db.people.insert({ "_id" : ObjectId("56066549ade2f21f36b0313b"), "title" : "Java 教程", "description" : "Java 是由Sun Microsystems公司于1995年5月推出的高级程序设计语言。", "by" : "菜鸟教程", "url" : "http://www.runoob.com", "tags" : [ "java" ], "likes" : 150 })
+db.people.insert({ "_id" : ObjectId("56066549ade2f21f36b0313b"), "title" : "Java 教程", "description" : "Java 是由Sun Microsystems公司于1995年5月推出的高级程序设计语言。", "by" : "菜鸟教程", "url" : "http://www.runoob.com", "tags" : [ "java" ) } )
+db.people.insert({ "_id" : ObjectId("5606654fade2f21f36b0313c"), "title" : "MongoDB 教程", "description" : "MongoDB 是一个 Nosql 数据库", "by" : "菜鸟教程", "url" : "http://www.runoob.com", "tags" : [ "mongodb" ], "likes" : 100 })
+db.people.find()
+db.people.find({},{"title":1, _id=0}).limit(2)
+db.people.find({},{"title":1, _id:0}).limit(2)
+db.people.find({},{"title":1, _id:0}).limit(1)
+db.people.find({},{"title":1, _id:0}).skip(3)
+db.people.find({},{"title":1, _id:0}).skip(1)
+db.people.find({},{"title":1, _id:0}).skip(2)
+db.people.find({},{"title":1, _id:0}).skip(0)
+db.people.find({},{"title":1}).sort()
+db.people.find({},{"title":1, _id:0}).sort("likes":1)
+db.people.find({},{"title":1, _id:0}).sort({"likes":1})
+db.people.find({},{"title":1, _id:0}).sort({"likes":-1})
+db.people.find({},{"title":1, _id:0}).sort({"title":-1})
+db.people.find({},{"title":1, _id:0}).sort({"title":1})
+cd.. }
+cd
+use value
+show dbs
+for(var i=0; i<40000; i++){ value.insert("v":parse.Math.random()); }
+for(var i=0; i<40000; i++){ value.insert({"v":parseInt(Math.random())}); }
+for(var i=0; i<40000; i++){ value.insert({"v":i}); }
+db.value.find()
+for(var i=0; i<40000; i++){ value.insert({"v":i}); }
+for(var i=0; i<40000; i++){ db.value.insert({"v":i}); }
+for(var i=0; i<40000; i++){ db.value.update({"v":i},{$set:{"key":(i%356 + i)}}); }
+db.value.ensureIndex({"v":1})
+db.value.find({"v":1000}).explain()
+db.value.find({"v":1000})
+db.value.find({"v":1000}).pretty()
+db.value.aggregate({$group:{_id:"$by_user",num_tutorial:{$sum:1}}}).Limit(10)
+db.value.aggregate({$group:{_id:"$by_user",num_tutorial:{$sum:1}}}).limit(10)
+db.value.aggregate({$group:{_id:"$by_user",num_tutorial:{$sum:1}}})
+db.value.aggregate({$group:{_id:"$by_user",num_tutorial:{$min:1}}})
+db.value.aggregate({$group:{_id:"$by_user",num_tutorial:{$max:1}}})
+db.value.aggregate({$group:{_id:"$by_user",num_tutorial:{$max:2}}})
+rs.initiate()
+rs.conf()
+show dbs
+use people
+db.people.aggregate({$group:{_id:"$by_user",num_tutorial :{$sum:1}}})
+db.people.find()
+use people
+db.person.find({"title":'PHP 教程'}).explain()
+use person
+db.person.find()
+use people
+db.people.find()
+use people
+db.people.find({"likes"$lt:400}).explain()
+db.people.find({"likes":$lt:400}).explain()
+db.people.find({"likes":{$lt:400}}).explain()
+db.people.find({"likes":{$lt:400}}).explain("executionStats")
+db.people.find({"title":'PHP 教程'}).explain("executionStats")
+show dbs
+use people
+db.people.find()
+db.people.find().pretty()
+db.people.find({"likes":{$lt:160}})
+db.people.find({"likes":{$lt:160}}).pretty()
+show dbs
+use nodedb
+db.nodedb.find()
+db.nodedb.find("name":sad)
+db.nodedb.find("name":'sad')
+db.nodedb.find({"name":'sad'})
+db.nodedb.find()
+db.nodedb.find("user")
+show dbs
+show collections
+show users
+show collections
+use nodedn
+show dbs
+use nodedb
+db.nodedb.remove({})
+show collection
+show collections
+ext
