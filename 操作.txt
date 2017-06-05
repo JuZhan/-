@@ -1,0 +1,29 @@
+1. git status 查看状态
+
+    mkdir 创建文件
+
+工作区 --> 暂存区 --> git本地仓库 --> 远程仓库
+
+git init
+
+git config --global user.name/email "xxx"
+
+
+2. git touch xxx.xxx 创建文件
+
+    git add xxx.xxx 添加文件到暂存区
+
+3. git commit -m '干嘛了' 添加到仓库
+
+4. vi 修改
+    :wq 保存
+
+5. git rm xxx.xx 删除文件
+    
+    rm -rf xx.xx
+
+6. git clone 仓库地址
+
+7 git push 同步到远程仓库
+
+

@@ -13,7 +13,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 global.dbHandel = require('./database/dbHandel');
-global.db = mongoose.connect("mongodb://172.29.35.84:27017/nodedb");//原來是localhost的
+global.db = mongoose.connect("mongodb://localhost:27017/nodedb");//原來是localhost的
 var app = express();
 app.use(session({ 
     secret: 'secret',
